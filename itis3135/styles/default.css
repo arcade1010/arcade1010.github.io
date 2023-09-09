@@ -22,3 +22,15 @@ body {
     font-style: italic;
   }
   
+  
+    table tr:nth-child(even) {
+      background-color: #cf2784;
+      color: #fff;
+     }
+      table tr:nth-child(odd) {
+        background-color: #ee8989;
+        color: #fff; 
+      }
+      table tr:nth-child(1) {
+        background-color: #326;
+        color: #fff; }
