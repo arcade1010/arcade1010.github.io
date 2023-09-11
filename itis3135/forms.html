@@ -24,8 +24,34 @@
         </nav>
     </header>
     <main>
-        <h2>Evan Wurster || ITIS 3135 Homepage</h2>
-        <p>All my 3135 stuff</p>
+        <h2>Evan Wurster || ITIS 3135 Forms</h2>
+        <p>Want to reach out?</p>
+        <form action=”#”>
+            <fieldset>
+                <label for="name">Name: <input type="text" id="name" name="name" placeholder="Enter your full name here" required/></label>
+                <label for="phone">Phone Number: <input type="text" id="phone" name="phone" placeholder="Whats a good callback number?" size="15"/></label>
+                <label for="email">Email Address: <input type="Email" id="email" name="email" placeholder="Email?"/></label>
+            </fieldset>
+            <fieldset>
+                <label for="checkbox">Ok with being contacted with infromation provided: <input type="checkbox" id="checkbox" name="checkbox" required/></label>
+            </fieldset>
+            <fieldset>
+                <label for="radio1">Morning Callback: <input type="radio" id="radio1" name="radio"/></label>
+                <label for="radio2">Evening Callback: <input type="radio" id="radio2" name="radio"/></label>
+            </fieldset>
+            <fieldset>
+                <label>Prefered Callback Method: 
+                    <select>
+                        <option value = "">(select one)</option>
+                        <option value = "1">Call</option>
+                        <option value = "2">Text</option>
+                        <option value = "3">Email</option>
+                    </select>
+                </label>
+            </fieldset>
+            <input type="reset" value="Reset"/>
+            <input type="submit" value="Submit"/>
+        </form>
     </main>
     <footer>
         <nav>

@@ -33,4 +33,33 @@ body {
       }
       table tr:nth-child(1) {
         background-color: #326;
-        color: #fff; }
+        color: #fff; 
+      }
+      
+
+      form {
+        width: 85vw;
+        border: 1px solid rgb(58, 9, 206)
+      }
+      fieldset {
+        border: none;
+        border-bottom: 1px solid rgb(109, 77, 206);
+      }
+      input[type="submit"], input[type="reset"]{
+        background-color: darkgreen;
+        color: lightcoral;
+        margin: 15px auto 10px auto;
+        width: 30%;
+        padding: 4px;
+        display: block
+      }
+      input[type="text"], input[type="email"] {
+        background-color:antiquewhite;
+        color: white;
+        border: 1px solid #b8820e;
+        margin: 8px 0 15px 0;
+        width: 100%;
+      }
+      input[type="radio"]{
+        display: block;
+      }
