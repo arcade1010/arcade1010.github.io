@@ -55,7 +55,7 @@ body {
       }
       input[type="text"], input[type="email"] {
         background-color:antiquewhite;
-        color: white;
+        color: rgb(8, 4, 12);
         border: 1px solid #b8820e;
         margin: 8px 0 15px 0;
         width: 100%;
