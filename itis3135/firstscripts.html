@@ -7,25 +7,8 @@
     <link rel = "stylesheet" href = "styles/default.css">
 </head>
 <body>
-    <header>
-        <h1>Evan Wurster's Elegant Whale || ITIS 3135</h1>
-        <nav>
-            <a href = "./">Homepage</a>
-            ||
-            <a href = "introduction.html">Introduction</a>
-            ||
-            <a href = "contract.html">Contract</a>
-            ||
-            <a href = "/">Back to main</a>
-            ||
-            <a href = "tables.html">Tables</a>
-            ||
-            <a href = "forms.html">Forms</a>
-            ||
-            <a href = "website_evaluations.html">Website Evaluations</a>
-        </nav>
-        <script src="scripts/defaultscripts.js"></script>
-    </header>
+    <div data-include="components/header.html"></div>
+    <script src="scripts/include.js"></script>
     <main>
         <h2>Evan Wurster || ITIS 3135 firstscripts</h2>
         <p>Stuff for the assingment down beloooow</p>
@@ -54,28 +37,7 @@
         <button onclick="whaleJoke()">How does one get banned from Sea World?</button>
         <p id="displayWhaleJoke"></p>
     </main>
-    <footer>
-        <nav>
-            <a href = "https://webpages.charlotte.edu/ewurste1/">CLT Webspace</a>
-            ||
-            <a href = "http://github.com/arcade1010">Github</a>
-            ||
-            <a href = "https://arcade1010.github.io/itis3135/">ITIS3135.io</a>
-            ||
-            <a href = "https://www.freecodecamp.org/fcc54c67ff5-8b87-4709-97c6-e361a4fd1595">FreeCodeCamp</a>
-            ||
-            <a href = "https://www.codecademy.com/profiles/text5090279181">Codecademy</a>
-            ||
-            <a href = "https://www.linkedin.com/in/evan-wurster-3416a9266/">LinkedIn</a>
-        </nav>
-        <p>Page built by <a href="wursterenterprises.com/index.html">Elegant Whale</a> &copy; 2023</p>
-        <a href="https://validator.w3.org/check?uri=referer">
-            <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
-           </a>
-           <a href="https://jigsaw.w3.org/css-validator/check/referer">
-            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-             </a>
-           
-    </footer>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.js"></script>
 </body>
 </html>
