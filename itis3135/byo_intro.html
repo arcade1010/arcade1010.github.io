@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evan Wurster's Elegant Whale || ITIS 3135 || BYO Intro</title>
+    <link rel = "stylesheet" href = "styles/default.css">
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/survey.js"></script>
+    <main>
+        <!-- what to do 
+            i guess find out why the addCourse button isnt working and fix it
+            make submit button that generates new intro page
+                have an empty div below survey, hide survey from user(or .remove it)
+                fill out the div to make intro page
+            make reset button that resets page to original form
+                button could just be a link to the origional byo intro page
+
+
+        --> 
+
+        <h2>Evan Wurster || ITIS 3135 BYO Intro Page</h2>
+        <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>>
+        <form id="frm">
+            <h4>Name: </h4>
+            <input type="text" id="name" value="Evan Wurster">
+            <h4>Mascot: </h4>
+            <input type="text" id="mascot" value="Elegant Whale">
+            <h4>Image: </h4>
+            <input type="file" id="image">
+            <h4>Image Caption: </h4>
+            <input type="text" id="caption" value="Sitting in front of the Parthenon">
+            <h4>Personal Background: </h4>
+            <input type="text" id="personalBackground" value="I'm from Wake Forest, I love my family, to cook, to work out and to play basketball">
+            <h4>Professional Background: </h4>
+            <input type="text" id="professionalBackground" value="I've got 3 collective years of customer service and I'm currently doordashing">
+            <h4>Academic Background: </h4>
+            <input type="text" id="academicBackground" value="I went to Heritage High School and attened Wake Tech for a year">
+            <h4>Background In Web Devolopment: </h4>
+            <input type="text" id="webDevBackground" value="I've learned some coding languages like Java">
+            <h4>Primary Computer Platform: </h4>
+            <input type="text" id="computerPlatform" value="Windows">
+            <h4>Courses Currently Taking: </h4>
+
+            <div id="courses">
+            <h5>Course Title: </h5>
+            <input type="text" id="courseTitle1" value="ITIS 3135">
+            <h5>Course Description: </h5>
+            <input type="text" id="courseDescription1" value="Learning and practicing the process of web devolpment with HTML, CSS and JavaScript">
+            
+            </div>
+           
+            <button onclick="addCourse()">Click to add a course</button>
+
+            <h4>Funny Thing About Yourself: </h4>
+            <input type="text" id="funnyThing" value="I got a black belt in Tae-Kwon-Do when I was like 12 so I don't know if it really counts">
+            <h4>Anything Else To Share: </h4>
+            <input type="text" id="anythingElse" value="I really like cookout and bojangles">
+            <h4>checkbox: </h4>
+            <input type="checkbox" id="checkToKnow">
+        </form>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.js"></script>
+</body>
+</html>
