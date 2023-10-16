@@ -12,7 +12,7 @@
     <script src="scripts/survey.js"></script>
     <main>
         <!-- what to do 
-            i guess find out why the addCourse button isnt working and fix it
+            complete delete button that generates with new course
             make submit button that generates new intro page
                 have an empty div below survey, hide survey from user(or .remove it)
                 fill out the div to make intro page
@@ -23,45 +23,49 @@
         --> 
 
         <h2>Evan Wurster || ITIS 3135 BYO Intro Page</h2>
-        <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>>
+        
         <form id="frm">
+            <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>>
             <h4>Name: </h4>
-            <input type="text" id="name" value="Evan Wurster">
+            <input type="text" id="name" value="Evan Wurster" required>
             <h4>Mascot: </h4>
-            <input type="text" id="mascot" value="Elegant Whale">
+            <input type="text" id="mascot" value="Elegant Whale" required>
             <h4>Image: </h4>
-            <input type="file" id="image">
+            <input type="file" id="image" required>
             <h4>Image Caption: </h4>
-            <input type="text" id="caption" value="Sitting in front of the Parthenon">
+            <input type="text" id="caption" value="Sitting in front of the Parthenon" required>
             <h4>Personal Background: </h4>
-            <input type="text" id="personalBackground" value="I'm from Wake Forest, I love my family, to cook, to work out and to play basketball">
+            <input type="text" id="personalBackground" value="I'm from Wake Forest, I love my family, to cook, to work out and to play basketball" required>
             <h4>Professional Background: </h4>
-            <input type="text" id="professionalBackground" value="I've got 3 collective years of customer service and I'm currently doordashing">
+            <input type="text" id="professionalBackground" value="I've got 3 collective years of customer service and I'm currently doordashing" required>
             <h4>Academic Background: </h4>
-            <input type="text" id="academicBackground" value="I went to Heritage High School and attened Wake Tech for a year">
+            <input type="text" id="academicBackground" value="I went to Heritage High School and attened Wake Tech for a year" required>
             <h4>Background In Web Devolopment: </h4>
-            <input type="text" id="webDevBackground" value="I've learned some coding languages like Java">
+            <input type="text" id="webDevBackground" value="I've learned some coding languages like Java" required>
             <h4>Primary Computer Platform: </h4>
-            <input type="text" id="computerPlatform" value="Windows">
-            <h4>Courses Currently Taking: </h4>
-
-            <div id="courses">
-            <h5>Course Title: </h5>
-            <input type="text" id="courseTitle1" value="ITIS 3135">
-            <h5>Course Description: </h5>
-            <input type="text" id="courseDescription1" value="Learning and practicing the process of web devolpment with HTML, CSS and JavaScript">
+            <input type="text" id="computerPlatform" value="Windows" required>
             
+            <h4>Courses Currently Taking: </h4>
+            <div id="coursesContainer">
+
             </div>
            
-            <button onclick="addCourse()">Click to add a course</button>
+            <button type="button" onclick="addCourse()">Click to add a course</button>
 
             <h4>Funny Thing About Yourself: </h4>
-            <input type="text" id="funnyThing" value="I got a black belt in Tae-Kwon-Do when I was like 12 so I don't know if it really counts">
+            <input type="text" id="funnyThing" value="I got a black belt in Tae-Kwon-Do when I was like 12 so I don't know if it really counts" required>
             <h4>Anything Else To Share: </h4>
-            <input type="text" id="anythingElse" value="I really like cookout and bojangles">
+            <input type="text" id="anythingElse" value="I really like cookout and bojangles" required>
             <h4>checkbox: </h4>
-            <input type="checkbox" id="checkToKnow">
+            <input type="checkbox" id="checkToKnow" required>
+            <input onclick="loadContent()" type="submit">
+            <button type="reset">Reset Form</button>
         </form>
+        
+
+        <div id="displayOutput">
+
+        </div>
     </main>
     <div data-include="components/footer.html"></div>
     <script src="scripts/include.js"></script>
