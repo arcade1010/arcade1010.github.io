@@ -74,5 +74,6 @@ body {
   img {
     height: 15%;
     width: 15%;
+    margin: auto;
   }
  } 
