@@ -68,3 +68,11 @@ body {
       input[type="radio"]{
         display: block;
       }
+
+      /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  img {
+    height: 15%;
+    width: 15%;
+  }
+ } 
