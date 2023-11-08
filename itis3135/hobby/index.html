@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby</title>
+    <style>
+        section {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hobby: Basketball</h1>
+        <script>
+            function showSection(sectionId) {
+              const sections = document.querySelectorAll('section');
+        
+              sections.forEach(section => {
+                if (section.id === sectionId) {
+                  section.style.display = 'block';
+                } else {
+                  section.style.display = 'none';
+                }
+              });
+            }
+        </script>
+        <nav>
+            <button id="home_button" onclick="showSection('homepage')">Homepage</button>
+            <button id="about_me_button" onclick="showSection('about_me')">About Me</button>
+            <button id="history_progression_button" onclick="showSection('history_progression')">History and Progression</button>
+            <button id="favorite_moves_button" onclick="showSection('favorite_moves')">Favorite Moves</button>
+            <button id="watch_nba_button" onclick="showSection('watch_nba')">Watch NBA</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="homepage">
+            <h2>Homepage</h2>
+            </div>
+        </section>
+        <section id="about_me">
+            <h2>ABout Me</h2>
+        </section>
+        <section id="history_progression">
+            <h2>History and Progression</h2>
+        </section>
+        <section id="favorite_moves">
+            <h2>Favorite Moves</h2>
+        </section>
+        <section id="watch_nba">
+            <h2>Watch NBA</h2>
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+            <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+        
+        <script>
+            documnet.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            documnet.getElementById("validation_link_html").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+    </footer>
+</body>
+</html>
