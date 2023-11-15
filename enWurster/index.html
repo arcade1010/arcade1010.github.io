@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Portfolio</title>
     <link rel = "stylesheet" href = "styles/default.css">
+    <script src="scripts/general.js"></script>
 </head>
 <body>
     <header>
         <h1>Evan Wurster</h1>
         <nav>
-            <button>Education</button>
-            <button>Projects</button>
-            <button>About Me</button>
-            <button>My PC</button>
-            <button>Contact</button>
+            <button onclick="educationScroll()">Education</button>
+            <button onclick="projectsScroll()">Projects</button>
+            <button onclick="aboutMeScroll()">About Me</button>
+            <button onclick="myPCScroll()">My PC</button>
+            <button onclick="contactScroll()">Contact</button>
         </nav>
     </header>
 
@@ -42,8 +43,8 @@
 
         <div class="divider"></div>
 
-        <section class="education">
-            <h2 class="educationHeading">Education</h2>
+        <section class="education" id="education">
+            <h2>Education</h2>
             <div class="gpaGradDate">
                 <h3>Current GPA: </h3>
                 <p>3.4 / 4</p>
@@ -75,7 +76,36 @@
             </div>
         </section>
             
+        <div class="divider"></div>
+
+        <section class="projects" id="projects">
+            <h2>Projects</h2>
+            <p>all my projects that are super awesome and impressive!</p>
+        </section>
             
+        
+        <div class="divider"></div>
+
+        <section class="aboutMe" id="aboutMe">
+            <h2>About me</h2>
+            <p>All the awesome stuff about me</p>
+        </section>
+        
+        <div class="divider"></div>
+
+        <section class="myPC" id="myPC">
+            <h2>My PC</h2>
+            <p>o yeah thats a great pc</p>
+        </section>
+
+
+        <div class="divider"></div>
+
+
+        <section class="contact" id="contact">
+            <h2>Contact Information</h2>
+            <p>ooooh you wanna send me internships sooo bad ooooo</p>
+        </section>
     </main>
 
 
