@@ -82,6 +82,21 @@ div {
     border: 1px solid #05382a;
     background-color: #0d3b66;
 }
+.educationHeading{
+    margin-left: 10%;
+}
+.gpaGradDate {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    
+}
+.gpaGradDate h3, .gpaGradDate p {
+    margin: 1%;
+
+}
+
 .educationContent {
     display: flex;
     flex-wrap: wrap;
