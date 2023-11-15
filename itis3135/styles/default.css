@@ -11,6 +11,25 @@ body {
     text-decoration: none;
     color: #326;
   }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  .fancyLink {
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+    color: #f5dd90;
+    background-color: #586ba4;
+    border: 3px solid #324376;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+
+  }
+  .fancyLink:hover {
+    transform:scale(1.2);
+  }
 
   p {
     font-family: verdana;
