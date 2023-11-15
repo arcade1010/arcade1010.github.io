@@ -49,6 +49,9 @@ main {
     padding-top: 0%;
     display: flex;
 }
+img {
+    border-radius: 0%;
+}
 .content2 {
     padding: 5%;
 }
