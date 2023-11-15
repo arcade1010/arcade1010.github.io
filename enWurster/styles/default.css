@@ -12,6 +12,29 @@ header {
     color: #f7ebe8;
     border:#444140 solid 4px;
 }
+nav {
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}
+
+button {
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: #b33f62;
+    color: #f3c677;
+    border: 2px solid #f9564f;
+    border-radius: 5px;;
+    margin: 4px;
+
+    transition-property: transform;
+    transition-duration: .2s;
+    transition-timing-function: ease;
+}
+button:hover {
+    transform: translateY(-5px);
+}
+
 main {
     background-color: #1e1e24;
     color: #dab785;
