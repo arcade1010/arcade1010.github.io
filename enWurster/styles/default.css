@@ -40,6 +40,18 @@ main {
     color: #dab785;
     padding: 1%;
 }
+.theConstruct {
+    align-items: center;
+    margin: auto;
+}
+.content1 {
+    padding: 2%;
+    padding-top: 0%;
+    display: flex;
+}
+.content2 {
+    padding: 5%;
+}
 h1 {
     text-align: center;
     
