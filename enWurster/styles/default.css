@@ -38,9 +38,11 @@ button:hover {
 main {
     background-color: #1e1e24;
     color: #dab785;
-    padding: 1%;
 }
-.theConstruct {
+section {
+    padding: 2%
+}
+.welcomeMessage {
     align-items: center;
     margin: auto;
 }
@@ -50,10 +52,15 @@ main {
     display: flex;
 }
 img {
-    border-radius: 0%;
+    border-radius: 4%;
+    scale: .9;
 }
 .content2 {
     padding: 5%;
+    padding-left: 3%;
+    margin: auto;
+    
+    margin-top: 3.5%;
 }
 h1 {
     text-align: center;
@@ -62,8 +69,17 @@ h1 {
 h2 {
     color: #e54b4b;
     border-bottom: 1px solid #f95738;
-    width: 150px;
+    width: 250px;
+    font-size: 3rem;
+    margin-bottom: auto;
+    
 }
 div {
     color: #ffa987;
+}
+.divider {
+    height: 6.5rem;
+    width: 100%;
+    border: 1px solid #05382a;
+    background-color: #088b68;
 }
