@@ -83,3 +83,8 @@ div {
     border: 1px solid #05382a;
     background-color: #088b68;
 }
+.educationContent {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
