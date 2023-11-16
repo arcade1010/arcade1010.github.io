@@ -7,12 +7,12 @@ html {
 body {
     margin:auto;
     background-color: #0d3b66;
-    height: 90%;
 }
 header {
     background-color: #1e1e24;
     color: #f7ebe8;
     border:#444140 solid 4px;
+    font-size: 2rem;
 }
 nav {
     margin: auto;
