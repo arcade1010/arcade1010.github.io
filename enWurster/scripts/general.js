@@ -13,3 +13,7 @@ function myPCScroll() {
 function contactScroll() {
     document.getElementById("contact").scrollIntoView();
 }
+
+function backToTop() {
+    document.getElementById("header").scrollIntoView();
+}
