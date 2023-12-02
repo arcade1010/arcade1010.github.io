@@ -5,14 +5,14 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    margin:auto;
-    background-color: #0d3b66;
+    background-color: #1e1e24;
 }
 header {
     background-color: #1e1e24;
     color: #f7ebe8;
     border:#444140 solid 4px;
     font-size: 2rem;
+    align-items: center;
 }
 nav {
     margin: auto;
@@ -123,4 +123,20 @@ div {
 }
 .projects h2 {
     margin-left: 10%;
+}
+.projects img {
+    width: 150px;;
+}
+.projects a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+.projects figure {
+    display: flex;
+    align-items: center;
+}
+.project {
+    border: 1px solid black;
+    margin-bottom: 25px;
+    padding: 1%;
 }
