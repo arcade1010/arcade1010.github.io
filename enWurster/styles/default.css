@@ -140,3 +140,15 @@ div {
     margin-bottom: 25px;
     padding: 1%;
 }
+.aboutMePicContainer {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.aboutMePicContainer img {
+    width: 15rem;
+    height: 15rem;
+}
+.aboutMePicContainer figure, .aboutMePicContainer figure h3 {
+    width: 15rem;
+}
