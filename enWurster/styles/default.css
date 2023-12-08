@@ -140,6 +140,9 @@ div {
     margin-bottom: 25px;
     padding: 1%;
 }
+.aboutMe {
+    justify-content: center;
+}
 .aboutMePicContainer {
     display: flex;
     flex-wrap: wrap;
