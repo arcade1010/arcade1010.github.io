@@ -16,7 +16,15 @@
         <p>Phone: 919-828-3268</p>
         <p>eMail: lionlandscaping919@gmail.com</p>
 
-        <label>Enter Your eMail:<input type="text" id="email"><button type="submit" onclick="emailSubmit()">submit</label>
+        <form id="myForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+         
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+         
+            <button type="submit">Submit</button>
+         </form>
         <div id="emailResult"></div>
     </main>
     <div data-include="components/clientProjectPart2Footer.html"></div>

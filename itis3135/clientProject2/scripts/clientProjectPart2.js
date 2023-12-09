@@ -1,7 +1,19 @@
-function emailSubmit() {
-    let email = document.getElementById('email').value;
-    document.getElementById("emailResult").innerHTML = "We will contact you at " + email + " in approximately 3 tp 5 business days";
-}
+// JavaScript for Form Validation
+const myForm = document.getElementById('myForm');
+
+myForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+   if (myForm.checkValidity()) {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    document.getElementById("emailResult").textContent = "Thanks for the info, " + name + ". We'll reach out within the next few business days at " + email + ".";
+   
+   }
+   else {
+      // Prevent form submission if there are validation errors
+      alert('Please fill in all required fields.');}
+});
+
 
 // JavaScript for Image Slider
 let slideIndex = 1;
