@@ -6,3 +6,19 @@ body {
 nav {
     margin: auto;
 }
+
+.slider-container {
+    width: 80%;
+    margin: 0 auto;
+ }
+ 
+ .slider {
+    display: flex;
+    overflow: hidden;
+ }
+ 
+ .slider img {
+    width: 100%;
+    transition: transform 0.5s ease;
+ }
+ 
