@@ -1,20 +1,50 @@
+/*Most Stuff */
 body {
     width: auto;
     height: auto;
     background-color: tan;
+    padding: 5%;
+}
+h1 {
+  text-align: center;
+  
 }
 nav {
     margin: auto;
+    text-align: center;
+    border-bottom: solid black 1px;
+}
+nav a {
+  padding: 1rem;
+}
+nav a:hover {
+  border: 1px solid #0d916d;
+  border-radius: 5px;
 }
 a {
     text-decoration: none;
-    color: rgb(7, 73, 62);
+    color: rgb(1, 58, 48);
     font-size:x-large;
 }
+img {
+  max-width: 40rem;
+  max-height: 40rem;
+}
 
-* {box-sizing:border-box}
+.about_us {
+  display: flex;
+}
+.about_us p {
+  width: 60%
+}
+
+.serviceable_areas {
+  text-align: center;
+}
+
 
 /* Slideshow container */
+* {box-sizing:border-box}
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -98,4 +128,8 @@ a {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+figure {
+  border: solid 1px black;
 }
