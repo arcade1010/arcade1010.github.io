@@ -1,3 +1,4 @@
+alert("Script is running");
 // JavaScript for Form Validation
 const myForm = document.getElementById('myForm');
 
