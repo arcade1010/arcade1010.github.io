@@ -43,8 +43,9 @@ img {
 }
 
 
-/* Slideshow container */
 * {box-sizing:border-box}
+
+/* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -128,8 +129,4 @@ img {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
-}
-
-figure {
-  border: solid 1px black;
 }
