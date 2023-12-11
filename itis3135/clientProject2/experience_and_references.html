@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Client Project Part 2</title>
     <link rel = "stylesheet" href = "styles/clientProjectPart2.css">
-    <script src="scripts/clientProjectPart2.js"></script>
 </head>
 <body>
     <div data-include="components/clientProjectPart2Header.html"></div>
     <script src="scripts/include.js"></script>
     <main>
+    <script src="scripts/clientProjectPart2.js"></script>
         <h2>Experience and References</h2>
         <p>Some of our work:</p>
         <ul> 
@@ -23,7 +23,7 @@
        
           <div class="slideshow_container">
             <div class="previous">
-              <button onclick="prevSlide()">Previous</button>
+              <button onclick="prevSlide()" class="prevBtn">Previous</button>
             </div>
 
             <div>
@@ -36,7 +36,7 @@
             </div>
 
             <div class="next">
-              <button onclick="nextSlide()">Next</button>
+              <button onclick="nextSlide()" class="nextBtn">Next</button>
             </div>
 
           </div>
