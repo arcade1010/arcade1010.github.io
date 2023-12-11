@@ -51,3 +51,11 @@ a {
 figure.image {
   margin: auto;
 }
+figure.image img {
+  width: 20rem;
+}
+.morespace {
+  margin-bottom: 15%;
+  margin-top: 10%;
+  border: 1px solid black;
+}
