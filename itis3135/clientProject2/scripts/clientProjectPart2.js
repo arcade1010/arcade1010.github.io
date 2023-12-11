@@ -1,4 +1,3 @@
-alert("Script is running");
 // JavaScript for Form Validation
 const myForm = document.getElementById('myForm');
 
@@ -16,32 +15,27 @@ myForm.addEventListener('submit', function (event) {
 });
 
 
-// JavaScript for Image Slider
-let slideIndex = 1;
-showSlides(slideIndex);
+let slideshow = ['<img src="images/debrisRemoval.png" id="image-in-slide"><figcaption id="caption-of-image">Debris clearing and removal - Summer 2023</figcaption>',
+'<img src="images/debrisRemoval2.png" id="image-in-slide"><figcaption id="caption-of-image">"Debris/material moving - Summer 2022"</figcaption>',
+'<img src="images/garden.png" id="image-in-slide"><figcaption id="caption-of-image">"Garden organization and masonry- Summer 2022"</figcaption>',
+'<img src="images/fence.jpg" id="image-in-slide"><figcaption id="caption-of-image">"10ft fence constructions - Spring 2023"</figcaption>']
+let images = ["images/debrisRemoval.png", "images/debrisRemoval2.png", "images/garden.png", "images/fence.jpg"];
+let captions = ["Debris clearing and removal - Summer 2023", "Debris/material moving - Summer 2022",
+                "Garden organization and masonry- Summer 2022", "10ft fence constructions - Spring 2023"];
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+function nextSlide() {
+  for (let i=0; i<slideshow.length()-1; i++) {
+    if(document.getElementById("slide-figure").innerHTML == slideshow[i]){
+      document.getElementById("slide-figure").innerHTML = slideshow[i+1];
+    }
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+  document.getElementById("slide-figure").innerHTML = slideshow[0];
+}
+function prevSlide() {
+  for (let i=1; i<slideshow.length(); i++) {
+    if(document.getElementById("slide-figure").innerHTML == slideshow[i]){
+      document.getElementById("slide-figure").innerHTML = slideshow[i-1];
+    }
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  document.getElementById("slide-figure").innerHTML = slideshow[slideshow.length()-1];
 }
