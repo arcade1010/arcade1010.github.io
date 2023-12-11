@@ -13,6 +13,7 @@ nav {
     margin: auto;
     text-align: center;
     border-bottom: solid black 1px;
+    padding-bottom: 2rem;
 }
 nav a {
   padding: 1rem;
@@ -42,4 +43,11 @@ a {
   text-align: center;
 }
 
-
+.slideshow_container {
+  display: flex;
+  align-items: center;
+  margin: 0 25%;
+}
+figure.image {
+  margin: auto;
+}

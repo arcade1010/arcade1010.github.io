@@ -25,18 +25,18 @@ let slideshow = ['<img src="images/debrisRemoval.png" id="image-in-slide"><figca
 function nextSlide() {
   for (let i=0; i<slideshow.length-1; i++) {
     if(document.getElementById("slide-figure").innerHTML == slideshow[i]){
-      document.getElementById("testingDiv").innerHTML = slideshow[i+1];
+      document.getElementById("slide-figure").innerHTML = slideshow[i+1];
       return;
     }
   }
-  document.getElementById("testingDiv").innerHTML = slideshow[0];
+  document.getElementById("slide-figure").innerHTML = slideshow[0];
 }
 function prevSlide() {
   for (let i=1; i<slideshow.length; i++) {
     if(document.getElementById("slide-figure").innerHTML == slideshow[i]){
-      document.getElementById("testingDiv").innerHTML = slideshow[i-1];
+      document.getElementById("slide-figure").innerHTML = slideshow[i-1];
       return;
     }
   }
-  document.getElementById("testingDiv").innerHTML = slideshow[slideshow.length-1];
+  document.getElementById("slide-figure").innerHTML = slideshow[slideshow.length-1];
 }
