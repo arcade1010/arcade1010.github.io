@@ -142,12 +142,14 @@ div {
 }
 
 .aboutMe {
-    justify-content: center;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 .aboutMePicContainer {
-    display: flex;
-    flex-wrap: wrap;
     
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
 }
 .aboutMePicContainer img {
     width: 15rem;
@@ -155,4 +157,10 @@ div {
 }
 .aboutMePicContainer figure {
     width: 15rem;
+    margin-right: 20px; 
+    flex: 0 0 auto;
+}
+.aboutMePicContainer figcaption {
+    display: block;
+    margin-top: 10px;
 }
