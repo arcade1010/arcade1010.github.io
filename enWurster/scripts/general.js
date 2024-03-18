@@ -18,27 +18,37 @@ function backToTop() {
     document.getElementById("header").scrollIntoView();
 }
 
+
 const aboutMeSection = document.querySelector('.aboutMeGallery');
-const scrollSpeed = 10; // Adjust scroll speed as needed
+const scrollSpeed = 1; // Adjust scroll speed as needed
+const accelerationFactor = 5; // Adjust acceleration factor as needed
 
-let scrollDirection = 0;
+let scrollDirection = 1;
+let mouseHovering = false;
 
-aboutMeSection.addEventListener('mousemove', (e) => {
-    const mouseX = e.clientX;
-    const sectionWidth = aboutMeSection.offsetWidth;
-
-    if (mouseX < sectionWidth * 0.1) {
-        scrollDirection = -1; // Scroll left
-    } else if (mouseX > sectionWidth * 0.9) {
-        scrollDirection = 1; // Scroll right
-    } else {
-        scrollDirection = 0; // Stop scrolling
-    }
+aboutMeSection.addEventListener('mouseenter', () => {
+    mouseHovering = true;
 });
 
-// Scroll container on hover
+aboutMeSection.addEventListener('mouseleave', () => {
+    mouseHovering = false;
+});
+
+// Continuous scrolling function
 const scrollContainer = () => {
-    aboutMeSection.scrollLeft += scrollDirection * scrollSpeed;
+    if (mouseHovering) {
+        aboutMeSection.scrollLeft += scrollDirection * scrollSpeed * accelerationFactor;
+    } else {
+        aboutMeSection.scrollLeft += scrollDirection * scrollSpeed;
+    }
+
+    // Reset scroll position if scrolled beyond the content width
+    if (scrollDirection === 1 && aboutMeSection.scrollLeft >= aboutMeSection.scrollWidth - aboutMeSection.clientWidth) {
+        aboutMeSection.scrollLeft = 0;
+    } else if (scrollDirection === -1 && aboutMeSection.scrollLeft <= 0) {
+        aboutMeSection.scrollLeft = aboutMeSection.scrollWidth - aboutMeSection.clientWidth;
+    }
+
     requestAnimationFrame(scrollContainer);
 };
 
