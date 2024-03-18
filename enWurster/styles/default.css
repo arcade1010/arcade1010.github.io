@@ -145,22 +145,23 @@ div {
     overflow-x: auto;
     white-space: nowrap;
 }
-.aboutMePicContainer {
-    
+.aboutMeGallery {
+    overflow-x: auto; 
+    white-space: normal; 
     display: flex;
-    flex-direction: row;
+    justify-content: flex-start; 
     padding: 10px;
 }
-.aboutMePicContainer img {
+.aboutMeGallery img {
     width: 15rem;
     height: 15rem;
 }
-.aboutMePicContainer figure {
+.aboutMeGallery figure {
     width: 15rem;
     margin-right: 20px; 
     flex: 0 0 auto;
 }
-.aboutMePicContainer figcaption {
+.aboutMeGallery figcaption {
     display: block;
     margin-top: 10px;
 }
