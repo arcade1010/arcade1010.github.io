@@ -142,17 +142,26 @@ div {
 }
 
 .aboutMe {
-    justify-content: center;
+    overflow-x: auto;
+    white-space: nowrap;
 }
-.aboutMePicContainer {
+.aboutMeGallery {
+    overflow-x: auto; 
+    white-space: normal; 
     display: flex;
-    flex-wrap: wrap;
-    
+    justify-content: flex-start; 
+    padding: 10px;
 }
-.aboutMePicContainer img {
+.aboutMeGallery img {
     width: 15rem;
     height: 15rem;
 }
-.aboutMePicContainer figure {
+.aboutMeGallery figure {
     width: 15rem;
+    margin-right: 20px; 
+    flex: 0 0 auto;
+}
+.aboutMeGallery figcaption {
+    display: block;
+    margin-top: 10px;
 }
