@@ -151,16 +151,22 @@ div {
     overflow-x: auto;
     white-space: nowrap;
 }
+.container {
+    overflow: hidden;
+
+}
 .aboutMeGallery {
-    overflow-x: auto; 
-    white-space: normal; 
-    display: flex;
-    justify-content: flex-start; 
+    display: grid;
+    gird-auto-flow: column;
+    grid-auto-columns: 250px;
+    justify-items: stretch;
+    animation: slide 15s linear infinite;
     padding: 5%;
 }
 .aboutMeGallery img {
     width: 15rem;
     height: 15rem;
+    object-fit: cover;
 }
 .aboutMeGallery figure {
     width: 15rem;
@@ -171,3 +177,8 @@ div {
     display: block;
     margin-top: 5%;
 }
+@keyframes slide {
+    to {
+        translate(-4 * 250px;);
+        }
+    }
