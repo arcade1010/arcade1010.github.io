@@ -150,20 +150,11 @@ div {
 
 }
 .aboutMeGallery {
-<<<<<<< HEAD
-    display: grid;
-    gird-auto-flow: column;
-    grid-auto-columns: 250px;
-    justify-items: stretch;
-    animation: slide 15s linear infinite;
-    padding: 5%;
-=======
     overflow-x: auto; 
     white-space: normal; 
     display: flex;
     justify-content: flex-start; 
     padding: 10px;
->>>>>>> parent of 26d507d (Merge branch 'main' of https://github.com/arcade1010/arcade1010.github.io)
 }
 .aboutMeGallery img {
     width: 15rem;
@@ -177,15 +168,5 @@ div {
 }
 .aboutMeGallery figcaption {
     display: block;
-<<<<<<< HEAD
-    margin-top: 5%;
-}
-@keyframes slide {
-    to {
-        translate(-4 * 250px;);
-        }
-    }
-=======
     margin-top: 10px;
 }
->>>>>>> parent of 26d507d (Merge branch 'main' of https://github.com/arcade1010/arcade1010.github.io)
