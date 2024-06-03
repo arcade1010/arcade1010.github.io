@@ -27,7 +27,7 @@ button {
     color: #f3c677;
     border: 2px solid #f9564f;
     border-radius: 5px;
-    margin: 0.5%;
+    margin: 4px;
 
     transition-property: transform;
     transition-duration: .2s;
@@ -55,30 +55,25 @@ section {
     padding: 2%
 }
 .welcomeMessage {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    
+    align-items: center;
+    margin: auto;
 }
-.welcomMessage figure img {
-    scale: .8;
+.content1 {
+    padding: 2%;
+    padding-top: 0%;
+    display: flex;
 }
 img {
     border-radius: 4%;
     scale: .9;
 }
 .content2 {
-    flex: 1 1 300px;
+    padding: 5%;
+    padding-left: 3%;
     margin: auto;
-    max-width: 100%;
-
+    
+    margin-top: 3.5%;
 }
-
-
-
-
-
-
 h1 {
     text-align: center;
     
@@ -128,7 +123,6 @@ div {
 }
 .projects h2 {
     margin-left: 10%;
-    padding-top: 2%;
 }
 .projects img {
     width: 150px;;
@@ -143,7 +137,7 @@ div {
 }
 .project {
     border: 1px solid black;
-    margin-bottom: 10%;
+    margin-bottom: 25px;
     padding: 1%;
 }
 
@@ -156,12 +150,20 @@ div {
 
 }
 .aboutMeGallery {
+<<<<<<< HEAD
     display: grid;
     gird-auto-flow: column;
     grid-auto-columns: 250px;
     justify-items: stretch;
     animation: slide 15s linear infinite;
     padding: 5%;
+=======
+    overflow-x: auto; 
+    white-space: normal; 
+    display: flex;
+    justify-content: flex-start; 
+    padding: 10px;
+>>>>>>> parent of 26d507d (Merge branch 'main' of https://github.com/arcade1010/arcade1010.github.io)
 }
 .aboutMeGallery img {
     width: 15rem;
@@ -170,11 +172,12 @@ div {
 }
 .aboutMeGallery figure {
     width: 15rem;
-    margin-right: 5%; 
+    margin-right: 20px; 
     flex: 0 0 auto;
 }
 .aboutMeGallery figcaption {
     display: block;
+<<<<<<< HEAD
     margin-top: 5%;
 }
 @keyframes slide {
@@ -182,3 +185,7 @@ div {
         translate(-4 * 250px;);
         }
     }
+=======
+    margin-top: 10px;
+}
+>>>>>>> parent of 26d507d (Merge branch 'main' of https://github.com/arcade1010/arcade1010.github.io)
