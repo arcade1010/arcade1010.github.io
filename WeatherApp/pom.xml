@@ -30,17 +30,65 @@
             <version>2.9.6</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.openjfx/javafx -->
+
+        <!-- JavaFX Controls module (required for JavaFX components like Stage, Button, etc.) -->
         <dependency>
             <groupId>org.openjfx</groupId>
-            <artifactId>javafx</artifactId>
+            <artifactId>javafx-controls</artifactId>
             <version>22.0.1</version>
-            <type>pom</type>
         </dependency>
+
+        <!-- JavaFX FXML module (if you use FXML for UI design) -->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>22.0.1</version>
+        </dependency>
+
+
+
     </dependencies>
 
     <build>
         <plugins>
+            <!-- JAR Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.2.4</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <transformers>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass>Main</mainClass>
+                                </transformer>
+                            </transformers>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+
+
+
+            <!-- Javafx plugin -->
             <plugin>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>

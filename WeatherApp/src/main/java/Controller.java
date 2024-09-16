@@ -38,7 +38,7 @@ public class Controller {
 
     }
 
-    public void beginProcess(){
+    public String beginProcess(){
         try {
             System.out.println("Beginning process with this cityName: " + cityName);
             //New geoJSON java object to store json geocoder data from geocoder api
@@ -48,10 +48,11 @@ public class Controller {
 
             System.out.println("Here's the geocoder location stuff: " + gJSON.toString());
             //call and display weather information from OpenWeatherMap api using lon and lat coords from gJSON
-            displayWeatherData(gJSON.getLat(), gJSON.getLon());
+            return displayWeatherData(gJSON.getLat(), gJSON.getLon());
 
         } catch (Exception e) {
             e.printStackTrace();
+            return "";
         }
     }
 
@@ -130,7 +131,8 @@ public class Controller {
         return null;
     }
 
-    private static void displayWeatherData(double latitude, double longitude){
+    //Returns the toString to display on the label
+    private static String displayWeatherData(double latitude, double longitude){
         //OpenWeatherMap API url with key
         String url = "https://api.openweathermap.org/data/2.5/weather?lat="+ latitude + "&lon=" + longitude +
                 "&appid=a00543a1dfefe1481476d9ef86e46c59";
@@ -149,10 +151,11 @@ public class Controller {
 
             wJSON = mapper.readValue(jsonResponse, weatherJSON.class);
 
-            System.out.println("Here's the weather for that city: " + wJSON.getMain().toString());
+            return wJSON.getMain().toString();
 
         } catch (Exception e){
             e.printStackTrace();
+            return "";
         }
     }
 }

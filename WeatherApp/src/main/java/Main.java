@@ -59,12 +59,17 @@ public class Main extends Application  {
         window.setTitle("Hopefully a weather app!");
 
        TextField nameInput = new TextField();
+       //will go under button btw
+       Label l1 = new Label("Weather info here:");
+
        b = new Button("Click me!");
-       b.setOnAction( e -> isString(nameInput, nameInput.getText()));
+       b.setOnAction( e -> l1.setText("Here's the weather:) " + isString(nameInput, nameInput.getText())));
+
+
 
        VBox layout1 = new VBox(10);
        layout1.setPadding(new Insets(20, 20, 20, 20));
-       layout1.getChildren().addAll(nameInput, b);
+       layout1.getChildren().addAll(nameInput, b, l1);
 
 
         scene1 = new Scene(layout1, 300, 200);
@@ -76,7 +81,8 @@ public class Main extends Application  {
 
     }
 
-    private boolean isString(TextField input, String name){
+    //If a valid String, return the weather object's toString, if not return "" and send pop the alert box
+    private String isString(TextField input, String name){
         try{
             name = name.replaceAll("\\s+", "").trim().toLowerCase();
             System.out.println(name);
@@ -85,18 +91,19 @@ public class Main extends Application  {
             for (char c : chars) {
                 if(!Character.isLetter(c)) {
                     AlertBox.display("Hey", name);
-                    return false;
+                    return "";
                 }
             }
 
             Controller controller = new Controller(name);
-            controller.beginProcess();
+            String output = controller.beginProcess();
+            return output;
 
-            return true;
+
         } catch (Exception e){
             e.printStackTrace();
         }
-        return true;
+        return "";
     }
 
 
