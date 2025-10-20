@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel = "stylesheet" href = "styles/default.css">
     <script src="scripts/general.js"></script>
 </head>
@@ -13,6 +14,7 @@
         <h1>Evan Wurster</h1>
         <nav>
             <button onclick="educationScroll()">Education</button>
+            <button onclick="experienceScroll()">Experience</button>
             <button onclick="projectsScroll()">Projects</button>
             <button onclick="aboutMeScroll()">About Me</button>
             <button onclick="contactScroll()">Contact</button>
@@ -29,11 +31,14 @@
                 </figure>
                 <div class="content2">
                     <h2>Hi</h2>
-                    <p>My name is Evan Wurster and I'm a recent UNC Charlotte graduate with a Bachelors degree in Computer Science. 
-                        Throughout this website I'll get the chance to share bits of myself and my coding journey with you. My Education history, 
-                        my coding Projects, more information About me, and Contact information 
-                        can be found in the different sections. The navigation bar at the top will jump you to whichever section you'd like. -Evan
-                    </p>
+                    <p>My name is Evan Wurster and I'm a <b>Software Developer</b> with a Bachelors degree in Computer Science from UNC Charlotte. 
+                        I build desktop and web applications, primarily using <b>Java/Spring</b> and <b>JavaScript/Node</b>.
+                        <br>
+                        My recent work includes freelance development of a custom AI-powered internal tool for a Charlotte catering company,
+                        automating event planning and cost breakdowns. For my senior capstone, I led development on the full-stack MERN <b>Tutor Finder</b> web app.
+                        <br>
+                        I'm driven by solving complex problems, quickly mastering new tools, and contributing to meaningful, collaborative projects. Explore my work below,
+                         or connect with me via the contact section!
                 </div>
             </div>
         </section>
@@ -44,8 +49,8 @@
         <section class="education" id="education">
             <h2>Education</h2>
             <div class="gpaGradDate">
-                <h3>Current GPA: </h3>
-                <p>3.35 / 4</p>
+                <h3>GPA: </h3>
+                <p>3.32 / 4</p>
             </div>
             <div class="gpaGradDate">
                 <h3>Graduated: </h3>
@@ -55,10 +60,10 @@
                 <p> I began studying at University
                     of North Carolina at Charlotte in Fall 2022. I graduated with 
                      a Bachelors degree in Computer Science with a concentration 
-                    in IT in May 2025. Throughout my academic career I've studied and learnt
-                    Java, JavaScript, HTML/CSS and associated stacks like JSPR and MERN. I've studied data structures, algorithms, and logic
-                    theory throughout several courses. I've had the great opportunity
-                    to practice and workshop my communication skills in my many public speaking and 
+                    in IT in May 2025. Throughout my academic career I've built projects primarly with Java and JavaScript.
+                    I studied data structures, algorithms, and logic
+                    theory, and had the great opportunity
+                    to further develop my communication skills in my many public speaking and 
                     ethics related courses.
                 </p>
                 <img src="images/UNCCLogo.png">
@@ -67,12 +72,30 @@
             <div class="educationContent">
                 <p>I graduated from HHS in May 2021 and attended Wake Tech Community
                     College for 2 semesters. I took my first beginner programming course 
-                    in High School and learned visual basic. I began studying and learning 
+                    in High School and learned visual basic. I began using 
                     Java when I went to Wake Tech.
                 </p>
                 <img src="images/wakeTechLogo.png">
             </div>
         </section>
+
+        <div class="divider"></div>
+
+        <section class="experience" id="experience">
+            <h2>Experience</h2>
+            <div class="bestImpressions job">
+                <h3>Software Developer (Freelance)</h3>
+                <h4>Best Impressions Caterers | May 2025 - Jul 2025</h4>
+                <ul>
+                    <p>Following graduation, I spent the summer working as a Freelance Software Developer for Best Impressions. My team and I worked on projects to 
+                        help automate cost analysis and operational workflows. We used Python and several APIs (Google, OpenAI) to extract, process and structure
+                        cost breakdowns from unstructured text. 
+                        <br>
+                        In collaboration, our team developed techincal solutions to real business problems, while picking up new tools and skills.
+                    </p>
+                </ul>
+            </div>
+            </section>
             
         <div class="divider"></div>
 
@@ -229,9 +252,24 @@
 
         <section class="contact" id="contact">
             <h2>Contact Information</h2>
-            <p>Feel free to shoot me an email anytime at:</p>
-            <h3>enwurster@gmail.com</h3>
-
+            
+            <div class="contact-links">
+                
+                <a href="mailto:enwurster@gmail.com" target="_blank" aria-label="Email Evan Wurster">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/evanwurster/" target="_blank" aria-label="LinkedIn Profile">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                
+                <a href="https://github.com/arcade1010" target="_blank" aria-label="GitHub Profile">
+                    <i class="fab fa-github"></i>
+                </a>
+                
+            </div>
+            
+            <h3>Dont hesitate to reach out and connect!</h3>
         </section>
     </main>
 

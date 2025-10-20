@@ -48,6 +48,8 @@ main {
     background-color: #1e1e24;
     color: #dab785;
     padding: 2%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .backToTop {
@@ -163,8 +165,13 @@ div {
 
 .educationContent p {
     width: 50%;
-    border: 1px solid darkgreen;
+    border: none;
     padding: 1.5%;
+    padding-bottom: 1;
+}
+
+.educationContent img {
+    margin-bottom:20px;
 }
 
 .projects h2 {
@@ -223,6 +230,34 @@ div {
 .aboutMeGallery figcaption {
     display: block;
     margin-top: 10px;
+}
+
+
+.contact-links {
+    text-align: center; /* Center the icons horizontally */
+    margin: 30px auto; /* Add vertical spacing above and below */
+    padding: 10px;
+}
+
+/* Style for the link (anchor) tag */
+.contact-links a {
+    color: #e0e0e0; /* Match main text color for icon */
+    font-size: 4rem; /* Make the icon very large and visible */
+    margin: 0 15px; /* Add horizontal spacing between icons */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    display: inline-block; /* Ensure margins and sizing work */
+}
+
+/* Hover effect: change color when the mouse is over the icon */
+.contact-links a:hover {
+    color: #00b0ff; /* Use your primary accent color (the blue) */
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+/* Adjust the old contact text to fit below the icons */
+.contact p, .contact h3 {
+    text-align: center;
+    margin-top: 5px; 
 }
 
 @media screen and (max-width: 768px) {

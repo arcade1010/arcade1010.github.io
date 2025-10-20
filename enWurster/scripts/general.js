@@ -1,6 +1,9 @@
 function educationScroll() {
     document.getElementById("education").scrollIntoView();
 }
+function experienceScroll() {
+    document.getElementById("experience").scrollIntoView();
+}
 function projectsScroll() {
     document.getElementById("projects").scrollIntoView();
 }
